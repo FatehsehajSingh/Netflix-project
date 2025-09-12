@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
 }
-body{background-color: black;
+
+body {
+    background-color: black;
 }
 
 .main {
@@ -12,7 +14,7 @@ body{background-color: black;
     height: 100vh;
     position: relative;
     background-position: center center;
-    background-size: max(1550px, 100vw);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -27,11 +29,12 @@ body{background-color: black;
 
 nav {
     justify-content: space-between;
-    width: 80vw;
+    width: 90%;
     margin: auto;
     align-items: center;
     display: flex;
     height: 90px;
+    padding: 0 10px;
 }
 
 nav img {
@@ -44,7 +47,7 @@ nav img {
 nav button {
     position: relative;
     z-index: 10;
-    
+
 }
 
 .hero {
@@ -58,58 +61,60 @@ nav button {
     z-index: 10;
     font-family: "Martel Sans", sans-serif;
     padding: 0px 30px;
- 
+
 }
 
 .hero> :first-child {
     font-weight: 900;
     font-size: 56px;
     line-height: 70px;
-    text-align:center;
+    text-align: center;
 }
 
 .hero> :nth-child(2) {
     font-weight: 900;
     font-size: 56px;
     line-height: 70px;
-    text-align:center;
+    text-align: center;
 }
 
 .hero> :nth-child(3) {
     font-weight: 500;
     font-size: 20px;
-    text-align:center;
+    text-align: center;
 }
 
 .hero> :nth-child(4) {
     font-weight: 400;
     font-size: 16px;
     line-height: 54px;
-    text-align:center;
+    text-align: center;
 }
+
 .seprate {
     height: 5px;
     background-color: rgba(251, 7, 7, 0.76);
     position: relative;
     z-index: 10;
 }
- .title {
+
+.title {
     margin-top: 30px;
     margin-left: 160px;
     font-size: 28px;
     margin-bottom: 20px;
     color: white;
-     font-family:"Martel Sans", sans-serif;
+    font-family: "Martel Sans", sans-serif;
 }
 
 .trending-container {
     display: flex;
     gap: 40px;
-    overflow-y:hidden ;
+    overflow-y: hidden;
     overflow-x: auto;
     padding-left: 160px;
     scroll-behavior: smooth;
-    
+
 }
 
 .card {
@@ -130,12 +135,13 @@ nav button {
     font-size: 50px;
     font-weight: bold;
     color: rgb(2, 2, 2);
-    text-shadow:   -1px -1px 0 rgb(255, 255, 255),
-         1px -1px 0 rgb(255, 255, 255),
-        -1px  1px 0 rgb(255, 255, 255),
-         1px  1px 0 rgb(255, 255, 255);
-    
+    text-shadow: -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255),
+        1px 1px 0 rgb(255, 255, 255);
+
 }
+
 .benefits-section {
     padding: 40px;
     max-width: 1200px;
@@ -166,21 +172,21 @@ nav button {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(153, 240, 78, 0.05);
-    font-family:"Martel Sans", sans-serif;
-    
+    font-family: "Martel Sans", sans-serif;
+
 }
 
 .benefit-card h3 {
     font-size: 1.3em;
     margin-bottom: 10px;
     color: white;
-    font-family:"Martel Sans", sans-serif;
+    font-family: "Martel Sans", sans-serif;
 }
 
 .benefit-card p {
     font-size: 1em;
     color: #ffffff;
-      font-family:"Martel Sans", sans-serif;
+    font-family: "Martel Sans", sans-serif;
 }
 
 .benefit-card img {
@@ -188,64 +194,250 @@ nav button {
     align-self: flex-end;
     margin-top: 20px;
 }
+
 .benefit-card svg {
     width: 50px;
     align-self: flex-end;
     margin-top: 20px;
 }
-.btn{
+
+.btn {
     padding: 8px 20px;
     background-color: black;
     color: white;
     font-weight: bold;
     border: 1px solid gray;
-     border-radius: 4px;
-     cursor: pointer;
-     font-size: 15px;
-  
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+
 }
-.brn{
+
+.brn {
     background-color: red;
     padding: 10px 35px;
     font-size: 25px;
     border-radius: 4px;
     font-weight: 150;
-   
+
 }
-.brns{
+
+.brns {
     background-color: red;
-    font-size:12px;
+    font-size: 12px;
     margin-left: 5px;
-    
-    
+
+
 }
-.main input{
-     background-color: rgb(0, 0, 0);
+
+.main input {
+    background-color: rgb(0, 0, 0);
     padding: 10px 35px;
     border-radius: 4px;
     font-size: 20px;
-  
-  border: 1px solid gray;
-   color: white;
-   
+
+    border: 1px solid gray;
+    color: white;
+
 }
-.faq h2{
+
+.faq h2 {
     text-align: center;
     font-size: 24px;
 }
-.faq{
+
+.faq {
     padding: 94px;
     color: white;
- 
+
 }
-.faqbox{
+
+.faqbox {
     margin-top: 14px;
     display: flex;
     background-color: rgb(45, 45, 45);
     padding: 34px 34px;
-   justify-content: space-between;
-   width: 80vw;
-   font-size: 28px;
-   cursor: pointer;
+    justify-content: space-between;
+    width: 80vw;
+    font-size: 28px;
+    cursor: pointer;
 }
- 
+
+@media (max-width: 900px) {
+    .hero {
+        padding: 0 10px;
+    }
+
+    .card {
+        min-width: 100px;
+    }
+
+    .faqbox {
+  
+        width: 90%;
+        font-size: 16px;
+        padding: 14px;
+
+    }
+    .faq {
+    padding: 12px 0px 12px 12px;
+    color: white;
+
+}
+
+.benefit-card h3 {
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.benefit-card p {
+    color: #ffffff;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.benefits-section h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.benefits-section {
+    padding: 0px 30px;
+    margin: auto;
+    margin-top: 20px;
+
+}   
+
+.benefit-card {
+    background: linear-gradient(135deg, #1f1f47, #3a0d4d);
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+   
+    box-shadow: 0 0 10px rgba(153, 240, 78, 0.05);
+    font-family: "Martel Sans", sans-serif;
+
+}
+
+.title {
+    margin-left: 20px;
+    margin-top: 24px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.trending-container {
+    display: flex;
+    gap: 30px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-left: 30px;
+    scroll-behavior: smooth;
+   
+
+}
+
+.btn {
+    padding: 8px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+
+}
+.hbtn{
+    width: 70%;
+    height: 30%;
+
+}
+
+.brn {
+    background-color: red;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 150;
+    
+    margin-top: 7px;
+
+}
+
+.brns {
+    background-color: red;
+    font-size: 12px;
+    
+}
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.hero {
+    color: white;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    font-family: "Martel Sans", sans-serif;
+  
+
+}
+
+.hero> :first-child {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+
+}
+
+.hero> :nth-child(2) {
+    font-weight: 700;
+    font-size: 30px;
+        line-height: 40px;
+
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 300;
+    font-size: 15px;
+        line-height: 40px;
+
+  
+}
+
+.hero> :nth-child(4) {
+    font-weight: 300;
+    font-size: 15px;
+        line-height: 40px;
+
+  
+}
+
+nav img {
+    width: 90px;
+    position: relative;
+    z-index: 10;
+    color: red;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    font-size: 12px;
+}
+
+}
